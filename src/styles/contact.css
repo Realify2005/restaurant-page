@@ -1,0 +1,27 @@
+img {
+    width: 500px;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+p {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 24px;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    font-size: 20px;
+}
