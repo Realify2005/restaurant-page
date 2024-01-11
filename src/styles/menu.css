@@ -1,0 +1,19 @@
+.menu {
+    display: grid;
+    grid-template: 1fr 3fr / 1fr 1fr;
+    align-items: center;
+    background-color: lightyellow;
+}
+
+h1 {
+    grid-column: 1 / 3;
+}
+
+img {
+    height: 800px;
+    width: auto;
+}
+
+p {
+    font-size: 20px;
+}

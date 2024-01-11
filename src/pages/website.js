@@ -1,16 +1,26 @@
-import createHome from "./home";
+import loadHome from "./home";
+import loadMenu from "./menu";
 import "../styles/website.css"
 
 function createNav() {
     const navbar = document.createElement("nav");
 
     const homeButton = document.createElement("button");
+    homeButton.addEventListener("click", () => {
+        loadHome();
+    })
     homeButton.textContent = "Home";
 
     const menuButton = document.createElement("button");
+    menuButton.addEventListener("click", () => {
+        loadMenu();
+    })
     menuButton.textContent = "Menu";
 
     const contactButton = document.createElement("button");
+    contactButton.addEventListener("click", () => {
+        loadContact();
+    })
     contactButton.textContent = "Contact Us";
 
     navbar.appendChild(homeButton);
@@ -21,10 +31,10 @@ function createNav() {
 }
 
 function buildWebpage() {
-    const content = document.getElementById("content");
+    const nav = document.querySelector(".nav");
 
-    content.appendChild(createNav());
-    content.appendChild(createHome());
+    nav.appendChild(createNav());
+    loadHome();
 }
 
 export default buildWebpage();
