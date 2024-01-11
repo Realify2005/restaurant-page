@@ -1,0 +1,15 @@
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-content: center;
+    background-color: grey;
+}
+
+.content {
+    text-align: center;
+}
+
+button {
+    font-size: 30px;
+}
